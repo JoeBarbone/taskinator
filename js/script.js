@@ -123,7 +123,7 @@ var createTaskActions = function(taskId) {
 
     actionContainerEl.appendChild(deleteButtonEl);
 
-    // creat dropdown selection
+    // create dropdown selection
     var statusSelectEl = document.createElement("select");
     statusSelectEl.className = "select-status";
     statusSelectEl.setAttribute("name", "status-change");
@@ -285,6 +285,7 @@ var deleteTask = function(taskId) {
 var saveTasks = function() {
     
     localStorage.setItem("tasks", JSON.stringify(tasks));
+    
 }
 
 
